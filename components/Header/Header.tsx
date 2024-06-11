@@ -1,5 +1,6 @@
 import Logo from '../../public/logo.svg';
-import Chevron from '../../public/chevron.svg';
+import Tab from '@/ui/Tab';
+import Burger from '../../public/burger.svg';
 function Header() {
   return (
     <header className="flex py-2.4 justify-between align-middle">
@@ -9,6 +10,11 @@ function Header() {
           СОЗДАТЬ СЧЕТ
         </button>
         <button className="bg-accent px-1.6 py-4 rounded-4 font-semibold text-14">КОРЗИНА</button>
+        <Tab />
+
+        <button className="p-0.8">
+          <Burger />
+        </button>
       </div>
     </header>
   );
